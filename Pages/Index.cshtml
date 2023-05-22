@@ -70,7 +70,7 @@ table, th, td {
 
 <h2>Employee Information</h2>
 
-<table id="myemployeetable" style="width:100%">
+<table  id="myemployeetable" style="width:100%">
   <tr>
     <th>First name</th>
     <th>Last name</th>
@@ -97,13 +97,14 @@ table, th, td {
 
     
     <button type="button" class="button button1" onclick="myFunction()">Add</button>
-    <button class="button button2">Update</button>
-    <button type="button" class="button button3" onclick="myFunction2()">Delete</button>
+    <button type = "button" class="button button2" onclick="myFunction2()">Update</button>
+    <button type="button" class="button button3" onclick="myFunction3()">Delete</button>
 
 
 
 <script>
 function myFunction() {
+  <!--In order to add employee info-->
   var table = document.getElementById("myemployeetable");
   var row = table.insertRow(1);
   var cell1 = row.insertCell(0);
@@ -116,8 +117,11 @@ function myFunction() {
   cell4.innerHTML = document.getElementById('phonenumber').value;
 }
 
-
 function myFunction2() {
+  var table = document.getElementById("myemployeetable");
+}
+
+function myFunction3() {
   var table = document.getElementById("myemployeetable");
   var row = table.deleteRow(1);
 }
